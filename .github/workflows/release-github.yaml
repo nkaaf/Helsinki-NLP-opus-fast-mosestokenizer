@@ -63,6 +63,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Debug | Echo deployment target
+        shell: bash
+        run: |
+          echo "${{ matrix.min_macosx_deployment_target }}"
+          exit 1
+
       - name: Download and install Miniconda
         shell: bash
         run: |
