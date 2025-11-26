@@ -59,7 +59,7 @@ jobs:
             runner: macos-14
             arch: arm64
             miniconda: Miniconda3-latest-MacOSX-arm64.sh
-            min_macosx_deployment_target: 11.0
+            min_macosx_deployment_target: "11.0"
 
     steps:
       - uses: actions/checkout@v4
